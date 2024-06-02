@@ -69,8 +69,8 @@ Go to Control Panel -> System and Security -> System -> Advanced Settings -> Env
 7. Add a new user variable, `SPARK_HOME` and give the path of the Spark folder. Then add `%SPARK_HOME%\bin` in 
 path variable. 
 8. Spark needs a piece of Hadoop to run. For Hadoop 2.7, we would need winutils.exe which can be downloaded 
-from here https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe and added on 
-`C\winutils`. We also need to add user variable `HADOOP_HOME` with this path as value in Environment Variables and 
+from here https://github.com/cdarlint/winutils/tree/master/hadoop-3.3.5/bin and added on 
+`C:\hadoop-3.3.5`. We also need to add user variable `HADOOP_HOME` with this path as value in Environment Variables and 
 then add it in Path variable as well.
 9. We need to add path for JAVA in a new user variable i.e. `JAVA_HOME` with value `C:\Program Files\Java\jdk-<version_you_installed>` 
 and add it to the path variable as well.

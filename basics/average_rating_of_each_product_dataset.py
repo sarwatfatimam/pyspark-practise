@@ -11,6 +11,6 @@ df = df.select('*', F.split(F.col('value'), ",").getItem(0).alias('product'),
 df = df.groupby(F.col('product')).agg(F.avg(F.col('rating')).alias('average_rating'))
 
 print(df.show())
-# df.write.mode('overwrite').csv('./data/output_average_rating_df.csv')
+df.write.mode('overwrite').csv('./data/output_average_rating_df.csv')
 
 spark.stop()
