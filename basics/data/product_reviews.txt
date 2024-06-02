@@ -1,0 +1,7 @@
+ProductA, 5
+ProductB, 3
+ProductA, 4
+ProductC, 2
+ProductB, 5
+ProductA, 3
+ProductC, 4
