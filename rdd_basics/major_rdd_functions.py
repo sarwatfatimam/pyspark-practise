@@ -60,14 +60,14 @@ print('take(n): ', rdd1.take(2))
 print('reduce(func): ', rdd1.reduce(lambda a, b: a+b))
 
 # saveAsTextFile(path): saves an RDD at a specified path
-rdd1.saveAsTextFile('../data/saving_rdd')
+# rdd1.saveAsTextFile('../data/saving_rdd')
 
 # countByKey(): count the number of element for each key for key-value pair
 print('countByKey(): ', rdd5.countByKey())
 print('countByValue(): ', rdd5.countByValue())
 
 # foreach(func): applies a function to each element of the RDD
-print('foreach(func): ', rdd1.foreach(lambda x: x*2))
+print('foreach(func): ', rdd1.foreach(lambda x: print(x)))
 
 
 
